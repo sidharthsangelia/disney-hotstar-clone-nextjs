@@ -1,16 +1,14 @@
-// app/search/[term]/page.tsx
 import MoviesCarousel from "@/components/MoviesCarousel";
 import { getPopularMovies, getSearchedMovies } from "@/lib/getMovies";
 import { getAiSuggestions } from "@/lib/getAiSuggestions";
 import { notFound } from "next/navigation";
 
 type Props = {
-  params: {
-    term: string;
-  };
+  params: Promise<{ term: string }>;
 };
 
-async function SearchPage({ params: { term } }: Props) {
+async function SearchPage({ params }: Props) {
+  const { term } = await params; // Resolve the Promise
   if (!term) notFound();
 
   const termToUse = decodeURI(term);

@@ -21,9 +21,8 @@ export default function AiSuggestions({ term }: Props) {
         const res = await getAiSuggestions(term);
         if (isMounted) setSuggestion(res || "");
       } catch {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         if (isMounted) setSuggestion("Couldn't fetch suggestions right now.");
-      } finally {
-        if (isMounted) setLoading(false);
       }
     };
 

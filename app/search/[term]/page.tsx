@@ -8,7 +8,7 @@ type Props = {
 };
 
 async function SearchPage({ params }: Props) {
-  const { term } = await params; // Resolve the Promise
+  const { term } = await params;
   if (!term) notFound();
 
   const termToUse = decodeURI(term);
@@ -21,7 +21,6 @@ async function SearchPage({ params }: Props) {
       <div className="flex flex-col space-y-4 mt-32 xl:mt-42">
         <h1 className="text-6xl font-bold px-10">Results for {termToUse}</h1>
 
-        {/* AI Suggestions */}
         {aiSuggestions && (
           <p className="text-muted-foreground px-10 max-w-3xl">
             {aiSuggestions}

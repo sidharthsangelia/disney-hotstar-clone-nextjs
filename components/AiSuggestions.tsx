@@ -20,7 +20,7 @@ export default function AiSuggestions({ term }: Props) {
       try {
         const res = await getAiSuggestions(term);
         if (isMounted) setSuggestion(res || "");
-      } catch (err) {
+      } catch {
         if (isMounted) setSuggestion("Couldn't fetch suggestions right now.");
       } finally {
         if (isMounted) setLoading(false);

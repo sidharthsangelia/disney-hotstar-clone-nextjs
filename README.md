@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Disney+ Hotstar Clone – Powered by AI (Next.js + TMDB + LLaMA 3)
 
-## Getting Started
+Check out the live app here 👉 [https://disney-hotstar-clone-nextjs.vercel.app/](https://disney-hotstar-clone-nextjs.vercel.app/)
 
-First, run the development server:
+This is a modern, clean, and responsive **Disney+ Hotstar clone** powered by the latest web tech and enhanced with **AI movie suggestions**. Built for fun, learning, and showing off what’s possible when design meets functionality.
 
+---
+
+## 🌟 Key Features
+
+### 🎥 UI Features
+- ✨ Sleek Disney+ inspired UI
+- 📱 Fully responsive (mobile, tablet, desktop)
+- 🎞️ Dynamic movie banners and sliders
+- 🌙 Light/Dark mode friendly
+- 🚀 Super-fast performance with server-side rendering
+
+### 🤖 AI Magic
+- **Smart Movie Suggestions**: When you search for something, the AI recommends what to watch next — just like a friend who’s into films.
+- Powered by **LLaMA 3 via Groq API** for fast and witty suggestions
+- Includes loading animations and fallback text if AI is unavailable
+
+---
+
+## 🧰 Tech Stack
+
+| Technology     | Purpose                                |
+|----------------|----------------------------------------|
+| **Next.js 15** | React-based framework (App Router)     |
+| **TypeScript** | Type safety and better DX              |
+| **Tailwind CSS** | Utility-first styling                |
+| **ShadCN/UI**  | Beautiful, accessible UI components    |
+| **Framer Motion** | For smooth animations               |
+| **TMDB API**   | Fetches real movie/show data           |
+| **Groq + LLaMA 3** | For lightning-fast AI suggestions |
+| **Vercel**     | Deployment and hosting                 |
+
+---
+
+## 🚀 Live Demo
+
+👉 **[Click here to try it out](https://disney-hotstar-clone-nextjs.vercel.app/)**  
+Works best on modern browsers. Mobile-friendly too!
+
+---
+
+## 🔍 How to Use Locally
+
+### 1. Clone the Repo:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/sidharthsangelia/disney-hotstar-clone-nextjs
+cd disney-hotstar-clone-nextjs
